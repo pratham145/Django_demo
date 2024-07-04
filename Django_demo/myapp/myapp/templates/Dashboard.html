@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 2em;
+    color: #333;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+        <main>
+            <div class="card">
+                <h2>Total Users</h2>
+                <p id="total-users">1,234</p>
+            </div>
+            <div class="card">
+                <h2>Active Users</h2>
+                <p id="active-users">567</p>
+            </div>
+            <div class="card">
+                <h2>Sales</h2>
+                <p id="sales">$12,345</p>
+            </div>
+            <div class="card">
+                <h2>Revenue</h2>
+                <p id="revenue">$123,456</p>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
